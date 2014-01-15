@@ -1,0 +1,40 @@
+
+.section-head {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-weight: bolder;
+}
+
+#top-panel {
+	height: 80px;
+}
+#title-panel {
+	margin-top: 50px;
+}
+#title {
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+	#title h1 {
+		font-weight: bold;
+	}
+
+.project-desc {
+	height: 330px;
+	width: 315px;
+	background-color: #FFFFFF;
+}	
+
+.project-desc:hover {
+	background-color: #CCCCCC;
+}	
+	
+#contact-links img {
+	padding: 23px;
+}
+
+.desc-hover {
+	background-color: #CCCCCC;
+}	
+
