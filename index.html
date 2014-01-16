@@ -12,31 +12,69 @@
   <body>
     
   <!-- Start of top panel and navigation -->
+    <!-- Navigation -->
+  <div class="fixed">
 
-  <div class="fixed panel" id="top-panel"   
-    <div class="row">
-      <div class="large-3 columns">
-        <h5>Welcome!</h5>
-      </div>
-      <div class="large-9 columns">
-        <ul class="button-group right">
-          <li><a href="#title-panel" class="button">Home</a></li>
-          <li><a href="#work" class="button">Work</a></li>
-          <li><a href="#about" class="button">About</a></li>
-          <li><a href="#contact" class="button">Contact</a></li>
+    <nav class="top-bar" data-topbar>
+
+      <ul class="title-area">
+
+        <!-- Title Area -->
+        <li class="name">
+          <h1>Welcome!</h1>
+        </li>
+
+        <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+
+      </ul>
+   
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+
+          <li class="divider"></li>
+
+          <li>
+            <a href="#title-panel">Home</a>
+          </li>
+
+          <li class="divider"></li>
+
+          <li>
+            <a href="#work">Work</a>
+          </li>
+
+          <li class="divider"></li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li class="divider"></li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
         </ul>
-      </div>
-    </div>
-  </div>
+
+      </section>
+
+    </nav>
+
+  </div>  
+ 
+  <!-- End Top Bar -->
  
   <!-- End of top panel and navigation -->
  
   <!-- Start  of title panel-->	
   <div class="row panel" id="title-panel">
 
+    <!-- use jQuery typer to display name and title -->
     <div class="large-12 columns" id="title">
-    	<h1>Dawn Miceli</h1>
-    	<h1>Web and Application Developer</h1>
+      <h1 id="name"></h1>
+      <h1 id="job"></h1>
     </div> 
 
   </div>
@@ -54,7 +92,8 @@
 
       <a href="http://dawnmiceli100.github.io/CraftBeerPicker">
         <div class="large-4 columns project-desc panel" id="picker-desc">
-          <p>Craft Beer Picker<br><br>Thinkful<br>Front End Web Development Course<br><br>January, 2014<br><br>HTML, CSS, JavaScript, jQuery, AJAX, JSON API</p>
+          <h4>Craft Beer Picker</h4>
+          <p>Thinkful<br>Front End Web Development Course<br>January, 2014<br><br>HTML, CSS, JavaScript, jQuery, AJAX, JSON API</p>
         </div>
       </a>  
 
@@ -63,15 +102,15 @@
           <img src="images/craft-beer-picker.png" alt="Craft Beer Picker">
         </a>   
       </div>
-
-    </div> 
+    </div>  
 
     <!-- Craft Beer Quiz info and links -->
     <div class="row">
 
       <a href="http://dawnmiceli100.github.io/CraftBeerQuiz">      
         <div class="large-4 columns project-desc panel" id="quiz-desc">
-          <p>Craft Beer Quiz<br><br>Thinkful<br>Front End Web Development Course<br><br>December, 2013<br><br>HTML, CSS, JavaScript, jQuery</p>
+          <h4>Craft Beer Quiz</h4>
+          <p>Thinkful<br>Front End Web Development Course<br>December, 2013<br><br>HTML, CSS, JavaScript, jQuery</p>
         </div>
       </a>  
 
@@ -88,7 +127,8 @@
 
       <a href="http://dawnmiceli100.github.io/ShoppingList">
         <div class="large-4 columns project-desc panel" id="shopping-desc">
-          <p>My Shopping List<br><br>Thinkful<br>Front End Web Development Course<br><br>December, 2013<br><br>HTML, CSS, JavaScript, jQuery</p>
+          <h4>My Shopping List</h4>
+          <p>Thinkful<br>Front End Web Development Course<br>December, 2013<br><br>HTML, CSS, JavaScript, jQuery</p>
         </div>
       </a>  
 
@@ -105,7 +145,8 @@
 
       <a href="http://dawnmiceli100.github.io/HotColdGame">
         <div class="large-4 columns project-desc panel" id="game-desc">
-          <p>Hot or Cold Game<br><br>Thinkful<br>Front End Web Development Course<br><br>December, 2013<br><br>HTML, CSS, JavaScript, jQuery</p>
+          <h4>Hot or Cold Game</h4>
+          <p>Thinkful<br>Front End Web Development Course<br>December, 2013<br><br>HTML, CSS, JavaScript, jQuery</p>
         </div>
       </a>  
 
@@ -122,9 +163,10 @@
 
       <a href="http://dawnmiceli100.github.io/37Signals">
         <div class="large-4 columns project-desc panel" id="37signals-desc">
-          <p>37Signals Clone<br><br>Thinkful<br>Front End Web Development Course<br><br>November, 2013<br><br>HTML, CSS, jQuery</p>
+          <h4>37Signals Clone</h4>
+          <p>Thinkful<br>Front End Web Development Course<br>November, 2013<br><br>HTML, CSS, jQuery</p>
         </div>
-      <a href="http://dawnmiceli100.github.io/37Signals">  
+      </a>  
 
       <div class="large-8 columns" id="37signals">
         <a href="http://dawnmiceli100.github.io/37Signals">
@@ -139,7 +181,8 @@
 
       <a href="http://dawnmiceli100.github.io/GoogleClone">
         <div class="large-4 columns project-desc panel" id="google-desc">
-          <p>Google Clone<br><br>Thinkful<br>Front End Web Development Course<br><br>November, 2013<br><br>HTML, CSS</p>
+          <h4>Google Clone</h4>
+          <p>Thinkful<br>Front End Web Development Course<br>November, 2013<br><br>HTML, CSS</p>
         </div>
       </a>  
 
@@ -242,14 +285,15 @@
           <!-- LinkedIn link -->
           <li>
             <a href="http://linkedin.com/pub/dawn-miceli/15/1a5/921/">
-            <img src="images/linkedin.png" alt="Linkedin Link"> 
+              <img src="images/linkedin.png" alt="Linkedin Link"> 
+            </a>  
           </li>
 
           <!-- Github link -->
           <li>
             <a href="https://github.com/dawnmiceli100">
               <img src="images/github.png" alt="Github Link">
-            <a/>   
+            </a>   
           </li>
         </ul>
          
@@ -280,6 +324,7 @@
   <script src="js/foundation.js"></script>
 
   <script type="text/javascript" src="js/application.js"></script>
+  <script src="js/jquery.typer.js"></script>
 
   </body>
 </html>

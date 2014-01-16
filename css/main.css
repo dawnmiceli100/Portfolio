@@ -1,24 +1,35 @@
+.panel {
+	background-color: #D1DAD1;
+}
 
 .section-head {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	font-weight: bolder;
 }
 
+.tob-bar {
+	background-color: #0079a1;
+}
 #top-panel {
 	height: 80px;
 }
 #title-panel {
-	margin-top: 50px;
+	margin-top: 20px;
+	height: 240px;
 }
 #title {
-	padding-top: 70px;
-	padding-bottom: 50px;
+	padding-top: 60px;
 }
 
-	#title h1 {
-		font-weight: bold;
-	}
+#name {
+	font-weight: bold;
+}
+
+#job {
+	font-weight: bolder;
+	font-size: 30px;
+}	
 
 .project-desc {
 	height: 330px;
@@ -26,15 +37,15 @@
 	background-color: #FFFFFF;
 }	
 
-.project-desc:hover {
-	background-color: #CCCCCC;
-}	
+.project-name {
+	font-size: 20px;
+}
 	
 #contact-links img {
 	padding: 23px;
-}
+}	
 
 .desc-hover {
-	background-color: #CCCCCC;
+	background-color: #8E9B8E;
 }	
 
